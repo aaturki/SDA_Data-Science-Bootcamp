@@ -10,7 +10,7 @@ def roman_to_int(s: str) -> int:
     for char in s:
         current_val = roman_dict[char]
         total += current_val
-        if current_val > prev_val:  # Subtractive case
+        if current_val > prev_val: 
             total -= 2 * prev_val
         prev_val = current_val
     
